@@ -25,7 +25,7 @@ employee_list.employees.extend([employee1, employee2, employee3])
 output_path = Path('output')
 # Create the directory if it doesn't exist
 output_path.mkdir(exist_ok=True)
-file_path = output_path / 'binary.out'
+file_path = output_path / 'binary.bin'
 # Write binary data into file
 with file_path.open('wb') as file:
     file.write(employee_list.SerializeToString())
