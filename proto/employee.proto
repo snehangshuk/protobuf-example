@@ -4,6 +4,14 @@ message Employee {
     string name = 1;
     int32 age = 2;
     string city = 3;
+    optional EmployeeType employee_type = 4;
+}
+
+enum EmployeeType {
+    FULL_TIME = 0;
+    PART_TIME = 1;
+    CONTRACT = 2;
+    INTERN = 3;
 }
 
 message Employees {
